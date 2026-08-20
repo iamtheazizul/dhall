@@ -25,7 +25,7 @@ type StationHours struct {
 	Hours string `json:"hours"`
 }
 
-const hoursFile = "data/hours.json"
+const hoursFile = "/app/data/hours.json"
 
 func GetHoursHandler(w http.ResponseWriter, r *http.Request) {
 	data, err := os.ReadFile(hoursFile)

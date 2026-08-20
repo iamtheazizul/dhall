@@ -21,8 +21,8 @@ type SlideshowImage struct {
     Link     string `json:"link"` 
 }
 
-const slideshowFile = "data/slideshow.json"
-const uploadsDir = "data/uploads"
+const slideshowFile = "/app/data/slideshow.json"
+const uploadsDir = "/app/data/uploads"
 
 // Initialize uploads directory
 func init() {

@@ -14,8 +14,8 @@ var (
 )
 
 const (
-	FoodsFile  = "data/foods.json"
-	CyclesFile = "data/cycles.json"
+	FoodsFile  = "/app/data/foods.json"
+	CyclesFile = "/app/data/cycles.json"
 )
 
 // Store provides file-based storage for foods and cycles
