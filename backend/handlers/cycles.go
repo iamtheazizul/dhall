@@ -5,7 +5,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/iamtheazizul/dhall-backend/data"
+	"github.com/iamtheazizul/dhall-backend/models"
 )
 
 // CreateCycleHandler handles POST /cycles
@@ -15,7 +15,7 @@ func CreateCycleHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var req data.CreateCycleRequest
+	var req models.CreateCycleRequest
 	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
 		respondWithError(w, http.StatusBadRequest, "invalid request body")
 		return
@@ -108,15 +108,15 @@ func UpdateCycleHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var req data.UpdateCycleRequest
+	var req models.UpdateCycleRequest
 	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
 		respondWithError(w, http.StatusBadRequest, "invalid request body")
 		return
 	}
 
-	cycle, err := data.GlobalStore.UpdateCycle(id, req)
+	cycle, err := models.GlobalStore.UpdateCycle(id, req)
 	if err != nil {
-		if errors.Is(err, data.ErrCycleNotFound) {
+		if errors.Is(err, models.ErrCycleNotFound) {
 			respondWithError(w, http.StatusNotFound, "cycle not found")
 			return
 		}

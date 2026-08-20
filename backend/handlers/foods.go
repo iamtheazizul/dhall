@@ -5,7 +5,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/iamtheazizul/dhall-backend/data"
+	"github.com/iamtheazizul/dhall-backend/models"
 )
 
 // CreateFoodHandler handles POST /foods
@@ -15,7 +15,7 @@ func CreateFoodHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var req data.CreateFoodRequest
+	var req models.CreateFoodRequest
 	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
 		respondWithError(w, http.StatusBadRequest, "invalid request body")
 		return

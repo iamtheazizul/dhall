@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/iamtheazizul/dhall-backend/data"
+	"github.com/iamtheazizul/dhall-backend/models"
 )
 
 // respondWithJSON sends a JSON response

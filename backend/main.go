@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
-    "github.com/iamtheazizul/dhall-backend/data"
+    "github.com/iamtheazizul/dhall-backend/models"
 	"github.com/iamtheazizul/dhall-backend/middleware"
 )
 
@@ -11,7 +11,7 @@ func main() {
     // Initialize Okta authentication
     InitAuth()
 
-    data.StartCycleScheduler()
+    models.StartCycleScheduler()
 	mux := http.NewServeMux()
 	registerRoutes(mux)
 
