@@ -4,10 +4,6 @@ import { useAuth } from '../context/AuthContext';
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth();
-  const bypassAuth = (() => {
-    const host = window.location.hostname || '';
-    return host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0' || host.endsWith('.local');
-  })();
 
   if (loading) {
     return (
@@ -17,8 +13,7 @@ function ProtectedRoute({ children }) {
     );
   }
 
-  if (!user && !bypassAuth) {
-  // if (!user) {
+  if (!user) {
     return <Navigate to="/login" replace />;
   }
 

@@ -3,11 +3,6 @@ import { API_BASE_URL } from '../config/api';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 const AuthContext = createContext();
-const BYPASS_AUTH = (() => {
-  const host = window.location.hostname || '';
-  return host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0' || host.endsWith('.local');
-})();
-
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
@@ -27,18 +22,13 @@ export function AuthProvider({ children }) {
       window.history.replaceState({}, '', location.pathname);
     }
   }, [location]);
+
   // Check auth status when token changes
   useEffect(() => {
     checkAuth();
   }, [token]);
 
   const checkAuth = async () => {
-    if (BYPASS_AUTH) {
-      setUser({ authenticated: true, name: 'Local Admin', email: 'local@example.com' });
-      setLoading(false);
-      return;
-    }
-
     if (!token) {
       setUser(null);
       setLoading(false);
@@ -77,7 +67,6 @@ export function AuthProvider({ children }) {
   };
 
   const login = () => {
-    // Redirect to backend login endpoint
     window.location.href = `${API_BASE_URL}/auth/login`;
   };
 
