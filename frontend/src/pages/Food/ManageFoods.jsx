@@ -1,255 +1,4 @@
-// import React, { useState, useEffect } from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import { API_BASE_URL } from '../../config/api';
-
-// function ManageFoods() {
-//   const [foods, setFoods] = useState([]);
-//   const [loading, setLoading] = useState(true);
-//   const [error, setError] = useState(null);
-//   const [editingId, setEditingId] = useState(null);
-//   const [editFormData, setEditFormData] = useState({});
-//   const navigate = useNavigate();
-//   const allergens = ['Fish', 'Shellfish', 'Soy', 'Eggs', 'Gluten', 'Dairy', 'Sesame', 'Halal', 'Pork', 'Spicy', 'Vegetarian', 'Vegan'];
-
-//   useEffect(() => {
-//     fetchFoods();
-//   }, []);
-
-//   // Refetch whenever the page comes into focus
-//   useEffect(() => {
-//     const handleFocus = () => {
-//       fetchFoods();
-//     };
-//     window.addEventListener('focus', handleFocus);
-//     return () => window.removeEventListener('focus', handleFocus);
-//   }, []);
-
-//   const fetchFoods = async () => {
-//     try {
-//       setLoading(true);
-//       setError(null);
-//       const response = await fetch(`${API_BASE_URL}/foods`);
-//       if (!response.ok) {
-//         throw new Error(`HTTP error! status: ${response.status}`);
-//       }
-//       const data = await response.json();
-//       setFoods(data || []);
-//     } catch (error) {
-//       console.error('Failed to fetch foods:', error);
-//       setError('Failed to load foods. Please try again.');
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
-
-//   const handleEdit = (food) => {
-//     setEditingId(food.id);
-//     setEditFormData({ ...food });
-//   };
-
-//   const handleSaveEdit = async () => {
-//     try {
-//       // Validate required fields
-//       if (!editFormData.name?.trim()) {
-//         alert('Food name is required');
-//         return;
-//       }
-
-//       // Use query parameter instead of URL parameter
-//       const response = await fetch(`${API_BASE_URL}/foods?id=${editingId}`, {
-//         method: 'PUT',
-//         headers: {
-//           'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify(editFormData)
-//       });
-
-//       if (!response.ok) {
-//         throw new Error(`HTTP error! status: ${response.status}`);
-//       }
-
-//       const updatedFood = await response.json();
-//       setFoods(foods.map(f => f.id === editingId ? updatedFood : f));
-//       setEditingId(null);
-//       setEditFormData({});
-//       alert('Food item updated successfully!');
-//     } catch (error) {
-//       console.error('Failed to update food:', error);
-//       alert('Failed to update food item');
-//     }
-//   };
-
-//   const handleDelete = async (foodId) => {
-//     if (window.confirm('Are you sure you want to delete this food item?')) {
-//       try {
-//         // Use query parameter instead of URL parameter
-//         const response = await fetch(`${API_BASE_URL}/foods?id=${foodId}`, {
-//           method: 'DELETE'
-//         });
-
-//         if (!response.ok) {
-//           throw new Error(`HTTP error! status: ${response.status}`);
-//         }
-
-//         setFoods(foods.filter(f => f.id !== foodId));
-//         alert('Food item deleted successfully!');
-//       } catch (error) {
-//         console.error('Failed to delete food:', error);
-//         alert('Failed to delete food item');
-//       }
-//     }
-//   };
-
-//   const handleRestrictionToggle = (restriction) => {
-//     setEditFormData(prev => {
-//       const restrictions = prev.restrictions?.includes(restriction)
-//         ? prev.restrictions.filter(r => r !== restriction)
-//         : [...(prev.restrictions || []), restriction];
-//       return { ...prev, restrictions };
-//     });
-//   };
-
-//   const handleCancelEdit = () => {
-//     setEditingId(null);
-//     setEditFormData({});
-//   };
-
-//   if (loading) {
-//     return <div className="p-6 text-center text-gray-500">Loading food items...</div>;
-//   }
-
-//   return (
-//     <div className="min-h-screen bg-gray-50 p-6">
-//       <div className="max-w-6xl mx-auto">
-//         <div className="flex justify-between items-center mb-8">
-//           <h1 className="text-3xl font-bold text-gray-800">Manage Food Items</h1>
-//           <button
-//             onClick={() => navigate('/admin/food/add')}
-//             className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-semibold"
-//           >
-//             + Add New Food
-//           </button>
-//         </div>
-
-//         {error && (
-//           <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
-//             {error}
-//             <button
-//               onClick={fetchFoods}
-//               className="ml-4 underline font-semibold hover:no-underline"
-//             >
-//               Retry
-//             </button>
-//           </div>
-//         )}
-
-//         {foods.length === 0 ? (
-//           <div className="bg-white rounded-lg shadow p-8 text-center">
-//             <p className="text-gray-500 text-lg">No food items found. Create one to get started!</p>
-//           </div>
-//         ) : (
-//           <div className="grid grid-cols-1 gap-6">
-//             {foods.map(food => (
-//               <div key={food.id} className="bg-white rounded-lg shadow-md p-6">
-//                 {editingId === food.id ? (
-//                   // Edit Mode
-//                   <div className="space-y-4">
-//                     <div>
-//                       <label className="block text-gray-700 font-medium mb-2">Name</label>
-//                       <input
-//                         type="text"
-//                         value={editFormData.name || ''}
-//                         onChange={(e) => setEditFormData({ ...editFormData, name: e.target.value })}
-//                         className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-//                       />
-//                     </div>
-//                     <div>
-//                       <label className="block text-gray-700 font-medium mb-2">Ingredients</label>
-//                       <textarea
-//                         value={editFormData.ingredients || ''}
-//                         onChange={(e) => setEditFormData({ ...editFormData, ingredients: e.target.value })}
-//                         className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-//                         rows={3}
-//                       />
-//                     </div>
-//                     <div>
-//                       <span className="block text-gray-700 font-medium mb-2">Dietary Restrictions</span>
-//                       <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-//                         {allergens.map(restriction => (
-//                           <label key={restriction} className="flex items-center cursor-pointer">
-//                             <input
-//                               type="checkbox"
-//                               checked={editFormData.restrictions?.includes(restriction) || false}
-//                               onChange={() => handleRestrictionToggle(restriction)}
-//                               className="mr-2 h-4 w-4 text-blue-600 rounded"
-//                             />
-//                             <span className="text-sm text-gray-600">{restriction}</span>
-//                           </label>
-//                         ))}
-//                       </div>
-//                     </div>
-//                     <div className="flex gap-3 pt-4">
-//                       <button
-//                         onClick={handleSaveEdit}
-//                         className="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 rounded-md font-semibold"
-//                       >
-//                         Save Changes
-//                       </button>
-//                       <button
-//                         onClick={handleCancelEdit}
-//                         className="flex-1 bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 rounded-md font-semibold"
-//                       >
-//                         Cancel
-//                       </button>
-//                     </div>
-//                   </div>
-//                 ) : (
-//                   // View Mode
-//                   <div className="flex justify-between items-start">
-//                     <div className="flex-1">
-//                       <h3 className="text-xl font-bold text-gray-800 mb-2">{food.name}</h3>
-//                       <p className="text-gray-600 mb-3">
-//                         <span className="font-semibold">Ingredients:</span> {food.ingredients}
-//                       </p>
-//                       <div className="flex flex-wrap gap-2">
-//                         {food.restrictions?.map(restriction => (
-//                           <span
-//                             key={restriction}
-//                             className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
-//                           >
-//                             {restriction}
-//                           </span>
-//                         ))}
-//                       </div>
-//                     </div>
-//                     <div className="flex gap-2 ml-4">
-//                       <button
-//                         onClick={() => handleEdit(food)}
-//                         className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-semibold text-sm"
-//                       >
-//                         Edit
-//                       </button>
-//                       <button
-//                         onClick={() => handleDelete(food.id)}
-//                         className="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-md font-semibold text-sm"
-//                       >
-//                         Delete
-//                       </button>
-//                     </div>
-//                   </div>
-//                 )}
-//               </div>
-//             ))}
-//           </div>
-//         )}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default ManageFoods;
-
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { API_BASE_URL } from '../../config/api';
 import { useAuth } from '../../context/AuthContext';
@@ -263,9 +12,11 @@ function ManageFoods() {
   const [searchTerm, setSearchTerm] = useState('');
   const [showLabelModal, setShowLabelModal] = useState(false);
   const [selectedFood, setSelectedFood] = useState(null);
+  const [importing, setImporting] = useState(false);
   const navigate = useNavigate();
   const allergens = ['Fish', 'Shellfish', 'Soy', 'Eggs', 'Gluten', 'Dairy', 'Sesame', 'Halal', 'Pork', 'Spicy', 'Vegetarian', 'Vegan'];
   const { getAuthHeader } = useAuth();
+  const fileInputRef = useRef(null);
 
   useEffect(() => {
     fetchFoods();
@@ -273,27 +24,39 @@ function ManageFoods() {
 
   useEffect(() => {
     const handleFocus = () => {
-      fetchFoods();
+      if (importing) return;
+      fetchFoods(false);
     };
     window.addEventListener('focus', handleFocus);
     return () => window.removeEventListener('focus', handleFocus);
-  }, []);
+  }, [importing]);
 
-  const fetchFoods = async () => {
+  const fetchFoods = async (showLoading = true) => {
     try {
-      setLoading(true);
+      if (showLoading) setLoading(true);
       setError(null);
-      const response = await fetch(`${API_BASE_URL}/foods`);
+      const response = await fetch(`${API_BASE_URL}/foods`, {
+        headers: getAuthHeader()
+      });
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      const data = await response.json();
+      let data = await response.json();
+      
+      // Sort by createdAt (newest first), or by name alphabetically if no createdAt
+      data = data.sort((a, b) => {
+        if (a.createdAt && b.createdAt) {
+          return new Date(b.createdAt) - new Date(a.createdAt); // newest first
+        }
+        return a.name.localeCompare(b.name);
+      });
+      
       setFoods(data || []);
     } catch (error) {
       console.error('Failed to fetch foods:', error);
       setError('Failed to load foods. Please try again.');
     } finally {
-      setLoading(false);
+      if (showLoading) setLoading(false);
     }
   };
 
@@ -305,9 +68,6 @@ function ManageFoods() {
   const handlePrintLabel = () => {
     // Create a new window for printing
     const printWindow = window.open('', '', 'height=600,width=800');
-    
-    // Get the label content
-    const labelContent = document.querySelector('.allergen-label-content');
     
     // Write the label HTML to the print window
     printWindow.document.write(`
@@ -391,7 +151,6 @@ function ManageFoods() {
         return;
       }
 
-      // Update handleSaveEdit:
       const response = await fetch(`${API_BASE_URL}/foods?id=${editingId}`, {
         method: 'PUT',
         headers: {
@@ -419,7 +178,6 @@ function ManageFoods() {
   const handleDelete = async (foodId) => {
     if (window.confirm('Are you sure you want to delete this food item?')) {
       try {
-  // Update handleDelete:
         const response = await fetch(`${API_BASE_URL}/foods?id=${foodId}`, {
           method: 'DELETE',
           headers: getAuthHeader()
@@ -452,6 +210,125 @@ function ManageFoods() {
     setEditFormData({});
   };
 
+  // ---- Export foods to a JSON file ----
+  const handleExportFoods = () => {
+    try {
+      const dataStr = JSON.stringify(foods, null, 2);
+      const blob = new Blob([dataStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      const timestamp = new Date().toISOString().slice(0, 10);
+      link.href = url;
+      link.download = `dhall-foods-export-${timestamp}.json`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      alert('Failed to export foods.');
+      console.error(err);
+    }
+  };
+
+  // ---- Import foods from a JSON file ----
+  const handleImportButtonClick = () => {
+    fileInputRef.current?.click();
+  };
+
+  const handleImportFileSelected = async (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    try {
+      setImporting(true);
+      const text = await file.text();
+      const parsed = JSON.parse(text);
+      const foodsToImport = Array.isArray(parsed) ? parsed : [parsed];
+
+      if (foodsToImport.length === 0) {
+        alert('No food items found in the selected file.');
+        return;
+      }
+
+      // Basic shape validation
+      const invalid = foodsToImport.find(f => !f || typeof f.name !== 'string' || !f.name.trim());
+      if (invalid) {
+        throw new Error('One or more food items in the file are missing a valid "name" field.');
+      }
+
+      // Build a set of existing food IDs for duplicate detection
+      const existingIds = new Set(foods.map(f => f.id));
+
+      let importedCount = 0;
+      let updatedCount = 0;
+      const failures = [];
+
+      for (const f of foodsToImport) {
+        const newFood = {
+          name: f.name.trim(),
+          ingredients: (f.ingredients || '').trim(),
+          restrictions: Array.isArray(f.restrictions) ? f.restrictions : []
+        };
+
+        // If food has an ID and it already exists, update it instead
+        if (f.id !== undefined && f.id !== null && existingIds.has(f.id)) {
+          try {
+            const response = await fetch(`${API_BASE_URL}/foods?id=${f.id}`, {
+              method: 'PUT',
+              headers: {
+                'Content-Type': 'application/json',
+                ...getAuthHeader()
+              },
+              body: JSON.stringify(newFood)
+            });
+            if (!response.ok) {
+              throw new Error(`HTTP ${response.status}`);
+            }
+            updatedCount += 1;
+          } catch (innerErr) {
+            failures.push(newFood.name);
+            console.error(`Failed to update food "${newFood.name}":`, innerErr);
+          }
+          continue;
+        }
+
+        // Otherwise, create new food item
+        try {
+          const response = await fetch(`${API_BASE_URL}/foods`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              ...getAuthHeader()
+            },
+            body: JSON.stringify(newFood)
+          });
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+          importedCount += 1;
+        } catch (innerErr) {
+          failures.push(newFood.name);
+          console.error(`Failed to import food "${newFood.name}":`, innerErr);
+        }
+      }
+
+      await fetchFoods();
+
+      const messageParts = [];
+      if (importedCount > 0) messageParts.push(`Imported ${importedCount} new food item(s).`);
+      if (updatedCount > 0) messageParts.push(`Updated ${updatedCount} existing item(s).`);
+      if (failures.length > 0) messageParts.push(`Failed: ${failures.join(', ')}`);
+      
+      alert(messageParts.length > 0 ? messageParts.join('\n') : 'No items to import.');
+    } catch (err) {
+      alert(`Failed to import foods: ${err.message}`);
+      console.error(err);
+    } finally {
+      setImporting(false);
+      e.target.value = '';
+    }
+  };
+
   // Filter foods based on search
   const filteredFoods = foods.filter(food =>
     food.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -465,14 +342,45 @@ function ManageFoods() {
   return (
     <div className="min-h-screen bg-gray-50 p-6">
       <div className="max-w-6xl mx-auto">
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center mb-8 flex-wrap gap-3">
           <h1 className="text-3xl font-bold text-gray-800">Manage Food Items</h1>
-          <button
-            onClick={() => navigate('/admin/food/add')}
-            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-semibold"
-          >
-            + Add New Food
-          </button>
+          <div className="flex gap-2 flex-wrap">
+            <input
+              type="file"
+              accept="application/json,.json"
+              ref={fileInputRef}
+              onChange={handleImportFileSelected}
+              className="hidden"
+            />
+            <button
+              onClick={handleImportButtonClick}
+              disabled={importing}
+              className={`py-2 px-4 rounded-md font-semibold transition text-white ${
+                importing
+                  ? 'bg-gray-400 cursor-not-allowed'
+                  : 'bg-teal-600 hover:bg-teal-700'
+              }`}
+            >
+              {importing ? 'Importing...' : '⬆️ Import JSON'}
+            </button>
+            <button
+              onClick={handleExportFoods}
+              disabled={foods.length === 0}
+              className={`py-2 px-4 rounded-md font-semibold transition text-white ${
+                foods.length === 0
+                  ? 'bg-gray-400 cursor-not-allowed'
+                  : 'bg-slate-600 hover:bg-slate-700'
+              }`}
+            >
+              ⬇️ Export JSON
+            </button>
+            <button
+              onClick={() => navigate('/admin/food/add')}
+              className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-semibold"
+            >
+              + Add New Food
+            </button>
+          </div>
         </div>
 
         {/* Search Bar */}
