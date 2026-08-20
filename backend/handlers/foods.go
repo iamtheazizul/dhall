@@ -27,7 +27,7 @@ func CreateFoodHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	food := data.GlobalStore.CreateFood(req)
+	food := models.GlobalStore.CreateFood(req)
 	respondWithJSON(w, http.StatusCreated, food)
 }
 
@@ -44,9 +44,9 @@ func GetFoodHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	food, err := data.GlobalStore.GetFood(id)
+	food, err := models.GlobalStore.GetFood(id)
 	if err != nil {
-		if errors.Is(err, data.ErrFoodNotFound) {
+		if errors.Is(err, models.ErrFoodNotFound) {
 			respondWithError(w, http.StatusNotFound, "food not found")
 			return
 		}
@@ -64,7 +64,7 @@ func GetAllFoodsHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	foods := data.GlobalStore.GetAllFoods()
+	foods := models.GlobalStore.GetAllFoods()
 	respondWithJSON(w, http.StatusOK, foods)
 }
 
@@ -81,15 +81,15 @@ func UpdateFoodHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var req data.UpdateFoodRequest
+	var req models.UpdateFoodRequest
 	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
 		respondWithError(w, http.StatusBadRequest, "invalid request body")
 		return
 	}
 
-	food, err := data.GlobalStore.UpdateFood(id, req)
+	food, err := models.GlobalStore.UpdateFood(id, req)
 	if err != nil {
-		if errors.Is(err, data.ErrFoodNotFound) {
+		if errors.Is(err, models.ErrFoodNotFound) {
 			respondWithError(w, http.StatusNotFound, "food not found")
 			return
 		}
@@ -113,9 +113,9 @@ func DeleteFoodHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err := data.GlobalStore.DeleteFood(id)
+	err := models.GlobalStore.DeleteFood(id)
 	if err != nil {
-		if errors.Is(err, data.ErrFoodNotFound) {
+		if errors.Is(err, models.ErrFoodNotFound) {
 			respondWithError(w, http.StatusNotFound, "food not found")
 			return
 		}
@@ -123,5 +123,5 @@ func DeleteFoodHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	respondWithJSON(w, http.StatusOK, data.SuccessResponse{Message: "food deleted successfully"})
+	respondWithJSON(w, http.StatusOK, models.SuccessResponse{Message: "food deleted successfully"})
 }

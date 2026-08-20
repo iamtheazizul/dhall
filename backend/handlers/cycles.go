@@ -32,7 +32,7 @@ func CreateCycleHandler(w http.ResponseWriter, r *http.Request) {
         return
     }
 
-	cycle := data.GlobalStore.CreateCycle(req)
+	cycle := models.GlobalStore.CreateCycle(req)
 	respondWithJSON(w, http.StatusCreated, cycle)
 }
 
@@ -53,9 +53,9 @@ func GetCycleHandler(w http.ResponseWriter, r *http.Request) {
 	includeFoods := r.URL.Query().Get("include_foods") == "true"
 
 	if includeFoods {
-		cycle, foodData, err := data.GlobalStore.GetCycleWithFoods(id)
+		cycle, foodData, err := models.GlobalStore.GetCycleWithFoods(id)
 		if err != nil {
-			if errors.Is(err, data.ErrCycleNotFound) {
+			if errors.Is(err, models.ErrCycleNotFound) {
 				respondWithError(w, http.StatusNotFound, "cycle not found")
 				return
 			}
@@ -71,9 +71,9 @@ func GetCycleHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	cycle, err := data.GlobalStore.GetCycle(id)
+	cycle, err := models.GlobalStore.GetCycle(id)
 	if err != nil {
-		if errors.Is(err, data.ErrCycleNotFound) {
+		if errors.Is(err, models.ErrCycleNotFound) {
 			respondWithError(w, http.StatusNotFound, "cycle not found")
 			return
 		}
@@ -91,7 +91,7 @@ func GetAllCyclesHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	cycles := data.GlobalStore.GetAllCycles()
+	cycles := models.GlobalStore.GetAllCycles()
 	respondWithJSON(w, http.StatusOK, cycles)
 }
 
@@ -140,9 +140,9 @@ func DeleteCycleHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err := data.GlobalStore.DeleteCycle(id)
+	err := models.GlobalStore.DeleteCycle(id)
 	if err != nil {
-		if errors.Is(err, data.ErrCycleNotFound) {
+		if errors.Is(err, models.ErrCycleNotFound) {
 			respondWithError(w, http.StatusNotFound, "cycle not found")
 			return
 		}
@@ -150,5 +150,5 @@ func DeleteCycleHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	respondWithJSON(w, http.StatusOK, data.SuccessResponse{Message: "cycle deleted successfully"})
+	respondWithJSON(w, http.StatusOK, models.SuccessResponse{Message: "cycle deleted successfully"})
 }

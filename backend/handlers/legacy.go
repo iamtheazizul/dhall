@@ -15,7 +15,7 @@ func GetDailyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	dailyData := data.FakeDailyData()
+	dailyData := models.FakeDailyData()
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(dailyData)
 }
