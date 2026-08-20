@@ -1,0 +1,18 @@
+# Environment
+.env
+.env.local
+.env.production
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.DS_Store
+
+# Backend
+backend/.idea/
+backend/data/
+backend/*.exe
+
+# OS
+.DS_Store
+*.log
