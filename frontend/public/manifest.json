@@ -1,0 +1,9 @@
+{
+  "short_name": "Dining Hall",
+  "name": "Murray-Aikins Dining Hall",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#c8102e",
+  "background_color": "#000000"
+}

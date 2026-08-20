@@ -1,0 +1,92 @@
+{
+  "Today": "2025-10-05T21:32:27.863816738Z",
+  "Data": {
+    "Diner": [
+      {
+        "Name": "Falafel Wrap",
+        "Ingredients": "Falafel, Tahini, Pita, Lettuce, Tomato",
+        "Restrictions": [
+          "Vegetarian",
+          "Vegan",
+          "Gluten",
+          "Sesame"
+        ]
+      },
+      {
+        "Name": "Spicy Ramen Bowl",
+        "Ingredients": "Noodles, Pork Broth, Chili Oil, Soft-Boiled Egg, Scallions",
+        "Restrictions": [
+          "Spicy",
+          "Pork",
+          "Eggs",
+          "Gluten"
+        ]
+      },
+      {
+        "Name": "Greek Yogurt Parfait",
+        "Ingredients": "Yogurt, Honey, Granola, Berries",
+        "Restrictions": [
+          "Dairy",
+          "Vegetarian",
+          "Gluten"
+        ]
+      }
+    ],
+    "Emily's": [
+      {
+        "Name": "Tofu Stir Fry",
+        "Ingredients": "Tofu, Mixed Vegetables, Soy Sauce, Rice",
+        "Restrictions": [
+          "Soy",
+          "Vegan",
+          "Vegetarian",
+          "Gluten"
+        ]
+      },
+      {
+        "Name": "Grilled Salmon",
+        "Ingredients": "Salmon, Lemon, Olive Oil, Herbs",
+        "Restrictions": [
+          "Fish"
+        ]
+      },
+      {
+        "Name": "Chicken Alfredo Pasta",
+        "Ingredients": "Chicken, Cream, Parmesan, Fettuccine, Garlic",
+        "Restrictions": [
+          "Dairy",
+          "Gluten"
+        ]
+      }
+    ],
+    "Global": [
+      {
+        "Name": "Vegetable Curry",
+        "Ingredients": "Potatoes, Carrots, Peas, Coconut Milk, Curry Paste",
+        "Restrictions": [
+          "Vegan",
+          "Vegetarian",
+          "Spicy"
+        ]
+      },
+      {
+        "Name": "Egg & Cheese Breakfast Sandwich",
+        "Ingredients": "Egg, Cheese, English Muffin, Butter",
+        "Restrictions": [
+          "Dairy",
+          "Eggs",
+          "Gluten",
+          "Vegetarian"
+        ]
+      },
+      {
+        "Name": "Shrimp Tacos",
+        "Ingredients": "Shrimp, Corn Tortillas, Slaw, Lime Crema",
+        "Restrictions": [
+          "Shellfish",
+          "Dairy"
+        ]
+      }
+    ]
+  }
+}
