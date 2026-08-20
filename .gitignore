@@ -10,7 +10,6 @@ frontend/.DS_Store
 
 # Backend
 backend/.idea/
-backend/data/
 backend/*.exe
 
 # OS

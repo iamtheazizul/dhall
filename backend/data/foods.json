@@ -1,0 +1,712 @@
+[
+  {
+    "id": "7dc8d465-fd86-428f-93b7-0ac9000ab993",
+    "name": "Texas French Toast",
+    "ingredients": "Basic ingredients for Texas French Toast",
+    "restrictions": [
+      "Eggs",
+      "Gluten",
+      "Dairy",
+      "Vegetarian",
+      "Shellfish"
+    ],
+    "created_at": "2026-02-25T00:39:55.483843787-05:00",
+    "updated_at": "2026-03-06T13:36:47.077416158-05:00"
+  },
+  {
+    "id": "2aac015f-6ee5-4ca3-92c8-2ac27b377a09",
+    "name": "Smoked Garlic Oregano Tofu",
+    "ingredients": "Basic ingredients for Smoked Garlic Oregano Tofu",
+    "restrictions": [
+      "Vegan",
+      "Soy"
+    ],
+    "created_at": "2026-02-25T00:39:57.280313136-05:00",
+    "updated_at": "2026-02-25T00:39:57.280313136-05:00"
+  },
+  {
+    "id": "81bc77db-45b3-4f3b-8744-93c89ec5c114",
+    "name": "Steamed Rice",
+    "ingredients": "Basic ingredients for Steamed Rice",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:39:59.046585369-05:00",
+    "updated_at": "2026-02-25T00:39:59.046585369-05:00"
+  },
+  {
+    "id": "af358e89-fae2-4044-b80e-652f3db9671b",
+    "name": "Peruvian Fries with Spicy Chorizo Tofu \u0026 Pigeon Peas",
+    "ingredients": "Basic ingredients for Peruvian Fries with Spicy Chorizo Tofu \u0026 Pigeon Peas",
+    "restrictions": [
+      "Spicy",
+      "Vegan",
+      "Soy"
+    ],
+    "created_at": "2026-02-25T00:39:55.152258718-05:00",
+    "updated_at": "2026-02-25T00:39:55.152258718-05:00"
+  },
+  {
+    "id": "faa94dfb-4193-4e7c-9d6d-39dd4d87585d",
+    "name": "Garlic Steamed Fingerlings",
+    "ingredients": "Basic ingredients for Garlic Steamed Fingerlings",
+    "restrictions": [
+      "Vegan",
+      "Shellfish"
+    ],
+    "created_at": "2026-02-25T00:39:59.588700481-05:00",
+    "updated_at": "2026-03-06T13:36:33.425807068-05:00"
+  },
+  {
+    "id": "0f0c0311-6ec3-440d-a4dc-ebc9b6ed9967",
+    "name": "Olive Oil Tossed Pasta",
+    "ingredients": "Basic ingredients for Olive Oil Tossed Pasta",
+    "restrictions": [
+      "Vegan",
+      "Gluten"
+    ],
+    "created_at": "2026-02-25T00:40:00.676886226-05:00",
+    "updated_at": "2026-02-25T00:40:00.676886226-05:00"
+  },
+  {
+    "id": "2425c3b6-cf51-4b27-9a65-b289604e4b23",
+    "name": "Egg Sandwiches on a Biscuit",
+    "ingredients": "Basic ingredients for Egg Sandwiches on a Biscuit",
+    "restrictions": [
+      "Eggs",
+      "Gluten",
+      "Dairy"
+    ],
+    "created_at": "2026-02-25T00:39:55.375499762-05:00",
+    "updated_at": "2026-02-25T00:39:55.375499762-05:00"
+  },
+  {
+    "id": "c7f406b6-206a-47f5-b0de-2589b4daae32",
+    "name": "Corn and Black Bean Quesadilla",
+    "ingredients": "Basic ingredients for Corn and Black Bean Quesadilla",
+    "restrictions": [
+      "Gluten",
+      "Dairy",
+      "Vegetarian"
+    ],
+    "created_at": "2026-02-25T00:39:56.437168067-05:00",
+    "updated_at": "2026-02-25T00:39:56.437168067-05:00"
+  },
+  {
+    "id": "408342e0-2096-476e-83e8-69c2274034f5",
+    "name": "Roasted Vegetables",
+    "ingredients": "Basic ingredients for Roasted Vegetables",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:39:59.483327265-05:00",
+    "updated_at": "2026-02-25T00:39:59.483327265-05:00"
+  },
+  {
+    "id": "4c2d2eb4-fc45-4134-bb7b-e3c297c3136a",
+    "name": "Chicken Finger",
+    "ingredients": "Chicken",
+    "restrictions": [],
+    "created_at": "2026-02-13T12:14:19.408618595-05:00",
+    "updated_at": "2026-02-13T12:14:19.408618595-05:00"
+  },
+  {
+    "id": "abb30a9c-bf8b-4c6b-ae47-b2da80e6bf18",
+    "name": "Beyond Mapo Ragu",
+    "ingredients": "Basic ingredients for Beyond Mapo Ragu",
+    "restrictions": [
+      "Vegan",
+      "Soy",
+      "Spicy"
+    ],
+    "created_at": "2026-02-25T00:39:56.542214613-05:00",
+    "updated_at": "2026-02-25T00:39:56.542214613-05:00"
+  },
+  {
+    "id": "6bacbe9d-7fb2-4da1-864f-7c4e56e9f114",
+    "name": "Egg Sandwiches on a Bagel",
+    "ingredients": "Basic ingredients for Egg Sandwiches on a Bagel",
+    "restrictions": [
+      "Eggs",
+      "Gluten",
+      "Dairy"
+    ],
+    "created_at": "2026-02-25T00:39:55.269787136-05:00",
+    "updated_at": "2026-02-25T00:39:55.269787136-05:00"
+  },
+  {
+    "id": "c98b168c-e191-4e36-920f-78753a004a8e",
+    "name": "Coconut Jasmine Rice",
+    "ingredients": "Basic ingredients for Coconut Jasmine Rice",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:39:59.692353102-05:00",
+    "updated_at": "2026-02-25T00:39:59.692353102-05:00"
+  },
+  {
+    "id": "0fe0b842-84bd-468f-b834-df2f7e0bc97b",
+    "name": "Marinara Sauce",
+    "ingredients": "Basic ingredients for Marinara Sauce",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:40:00.884922774-05:00",
+    "updated_at": "2026-02-25T00:40:00.884922774-05:00"
+  },
+  {
+    "id": "1541a44b-8c66-4052-a555-ae35ace1c161",
+    "name": "Classic Chicken \u0026 Caesar Salads",
+    "ingredients": "Basic ingredients for Classic Chicken \u0026 Caesar Salads",
+    "restrictions": [
+      "Eggs",
+      "Dairy"
+    ],
+    "created_at": "2026-02-25T00:39:58.581007765-05:00",
+    "updated_at": "2026-02-25T00:39:58.581007765-05:00"
+  },
+  {
+    "id": "c9e18126-5498-4365-966f-f96233d8c193",
+    "name": "Pico De Gallo",
+    "ingredients": "Basic ingredients for Pico De Gallo",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:40:01.215925561-05:00",
+    "updated_at": "2026-02-25T00:40:01.215925561-05:00"
+  },
+  {
+    "id": "81ac0797-1b2f-446c-9e57-d733a51efe99",
+    "name": "Creamy Alfredo",
+    "ingredients": "Basic ingredients for Creamy Alfredo",
+    "restrictions": [
+      "Vegetarian",
+      "Dairy",
+      "Gluten"
+    ],
+    "created_at": "2026-02-25T00:40:00.781925123-05:00",
+    "updated_at": "2026-02-25T00:40:00.781925123-05:00"
+  },
+  {
+    "id": "651144a4-7387-41b2-a317-0a8ea002907b",
+    "name": "Beef and Lamb Gyros",
+    "ingredients": "Basic ingredients for Beef and Lamb Gyros",
+    "restrictions": [
+      "Gluten",
+      "Dairy"
+    ],
+    "created_at": "2026-02-25T00:39:57.931777567-05:00",
+    "updated_at": "2026-02-25T00:39:57.931777567-05:00"
+  },
+  {
+    "id": "b64571fc-e18b-4de9-89bc-b6e84477f084",
+    "name": "Crispy Fries",
+    "ingredients": "Basic ingredients for Crispy Fries",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:40:00.463253749-05:00",
+    "updated_at": "2026-02-25T00:40:00.463253749-05:00"
+  },
+  {
+    "id": "5d1e0cb4-f198-4c87-a495-5a501bca07e4",
+    "name": "Vegan Sour Cream",
+    "ingredients": "Basic ingredients for Vegan Sour Cream",
+    "restrictions": [
+      "Vegan",
+      "Soy"
+    ],
+    "created_at": "2026-02-25T00:40:01.439697651-05:00",
+    "updated_at": "2026-02-25T00:40:01.439697651-05:00"
+  },
+  {
+    "id": "d27e9915-1553-4d20-990b-1d636869e12f",
+    "name": "Vegetable Fried Rice",
+    "ingredients": "Basic ingredients for Vegetable Fried Rice",
+    "restrictions": [
+      "Vegetarian",
+      "Soy"
+    ],
+    "created_at": "2026-02-25T00:39:58.80687443-05:00",
+    "updated_at": "2026-02-25T00:39:58.80687443-05:00"
+  },
+  {
+    "id": "14b6a0fb-aebb-4d6a-b690-677d486b3c8a",
+    "name": "Build Your Own Salmon or Tofu Poke Bowl",
+    "ingredients": "Basic ingredients for Build Your Own Salmon or Tofu Poke Bowl",
+    "restrictions": [
+      "Fish",
+      "Soy",
+      "Sesame"
+    ],
+    "created_at": "2026-02-25T00:39:58.368043061-05:00",
+    "updated_at": "2026-02-25T00:39:58.368043061-05:00"
+  },
+  {
+    "id": "4d7d9078-9d0f-4809-b45e-e761c73d12f1",
+    "name": "Spicy Black Beans",
+    "ingredients": "Basic ingredients for Spicy Black Beans",
+    "restrictions": [
+      "Vegan",
+      "Spicy"
+    ],
+    "created_at": "2026-02-25T00:40:00.23766846-05:00",
+    "updated_at": "2026-03-06T13:36:27.693423534-05:00"
+  },
+  {
+    "id": "5a298d55-f68d-4659-825d-9a8a7d6db135",
+    "name": "Arroz Verde",
+    "ingredients": "Basic ingredients for Arroz Verde",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:39:59.271984968-05:00",
+    "updated_at": "2026-02-25T00:39:59.271984968-05:00"
+  },
+  {
+    "id": "7b9b990f-0c0e-43fc-9330-e93edb48adeb",
+    "name": "Green Beans",
+    "ingredients": "Basic ingredients for Green Beans",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:39:59.796803739-05:00",
+    "updated_at": "2026-02-25T00:39:59.796803739-05:00"
+  },
+  {
+    "id": "555fd313-245a-466d-b058-b347aa5fcb7a",
+    "name": "Creole Beans \u0026 Rice with Kale",
+    "ingredients": "Beans, Kale",
+    "restrictions": [
+      "Vegetarian",
+      "Vegan"
+    ],
+    "created_at": "2026-01-22T19:09:10.395020361-05:00",
+    "updated_at": "2026-01-22T19:09:10.395020361-05:00"
+  },
+  {
+    "id": "b347e81f-138f-4ccd-81bf-9cf984577c38",
+    "name": "Guacamole",
+    "ingredients": "Basic ingredients for Guacamole",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:40:01.334316156-05:00",
+    "updated_at": "2026-02-25T00:40:01.334316156-05:00"
+  },
+  {
+    "id": "735aa0e5-e1e0-4f00-9ead-b28ab2f0cfb4",
+    "name": "Happy Valley Farms Local Beef Burgers",
+    "ingredients": "Basic ingredients for Happy Valley Farms Local Beef Burgers",
+    "restrictions": [
+      "Gluten"
+    ],
+    "created_at": "2026-02-25T00:39:58.262416867-05:00",
+    "updated_at": "2026-02-25T00:39:58.262416867-05:00"
+  },
+  {
+    "id": "0e7e1bf1-2730-420d-8d8c-13cbdbec7d7b",
+    "name": "Plantain Chips",
+    "ingredients": "Basic ingredients for Plantain Chips",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:40:00.35541323-05:00",
+    "updated_at": "2026-02-25T00:40:00.35541323-05:00"
+  },
+  {
+    "id": "1560f262-04ea-4a1d-8de8-df14bd42fda4",
+    "name": "Herb Roasted Garnet Yams",
+    "ingredients": "Basic ingredients for Herb Roasted Garnet Yams",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:39:59.903950109-05:00",
+    "updated_at": "2026-02-25T00:39:59.903950109-05:00"
+  },
+  {
+    "id": "361b484a-07a7-4994-a8df-e8134a63f610",
+    "name": "Carrot Choripan",
+    "ingredients": "Basic ingredients for Carrot Choripan",
+    "restrictions": [
+      "Vegan",
+      "Spicy"
+    ],
+    "created_at": "2026-02-25T00:39:58.050519617-05:00",
+    "updated_at": "2026-02-25T00:39:58.050519617-05:00"
+  },
+  {
+    "id": "94fdec53-1be7-4e23-8e40-4b56c6e90f5c",
+    "name": "Deluxe Veggie Burger",
+    "ingredients": "Black beans, quinoa, vegetables, lettuce, tomato, avocado, bun",
+    "restrictions": [
+      "Vegetarian",
+      "Gluten"
+    ],
+    "created_at": "2026-01-12T10:49:39.946608384-05:00",
+    "updated_at": "2026-01-12T10:49:40.039076688-05:00"
+  },
+  {
+    "id": "f199531d-c89d-431b-928e-d649dc59ed8c",
+    "name": "Daily Vegan Smoothie",
+    "ingredients": "Basic ingredients for Daily Vegan Smoothie",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:40:01.861515401-05:00",
+    "updated_at": "2026-02-25T00:40:01.861515401-05:00"
+  },
+  {
+    "id": "abdf9a9a-8dd7-4853-a9b0-22f6511441b0",
+    "name": "Hudson Valley Steelhead Trout",
+    "ingredients": "Basic ingredients for Hudson Valley Steelhead Trout",
+    "restrictions": [
+      "Fish"
+    ],
+    "created_at": "2026-02-25T00:39:58.155503451-05:00",
+    "updated_at": "2026-02-25T00:39:58.155503451-05:00"
+  },
+  {
+    "id": "35bf4855-624a-4a98-84e0-a1d7a1ac73e1",
+    "name": "ferfer",
+    "ingredients": "frefre",
+    "restrictions": [
+      "Fish"
+    ],
+    "created_at": "2026-02-17T00:19:05.712229389-05:00",
+    "updated_at": "2026-02-17T00:19:05.712229389-05:00"
+  },
+  {
+    "id": "13ee28bd-370b-4822-bcc5-f4cb60d350cb",
+    "name": "Bacon",
+    "ingredients": "Basic ingredients for Bacon",
+    "restrictions": [
+      "Pork"
+    ],
+    "created_at": "2026-02-25T00:39:55.802556481-05:00",
+    "updated_at": "2026-02-25T00:39:55.802556481-05:00"
+  },
+  {
+    "id": "18dbd46d-6890-4b11-b3a5-a7dcc198c2ff",
+    "name": "Garlic Bread",
+    "ingredients": "Basic ingredients for Garlic Bread",
+    "restrictions": [
+      "Vegetarian",
+      "Gluten",
+      "Dairy"
+    ],
+    "created_at": "2026-02-25T00:40:01.758131834-05:00",
+    "updated_at": "2026-02-25T00:40:01.758131834-05:00"
+  },
+  {
+    "id": "e16f211f-18ca-43ff-abb0-7f36b8899d55",
+    "name": "Steamed Baby Yukons",
+    "ingredients": "Basic ingredients for Steamed Baby Yukons",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:39:59.377533574-05:00",
+    "updated_at": "2026-02-25T00:39:59.377533574-05:00"
+  },
+  {
+    "id": "c76987d9-5d45-46e6-8952-04d44429edd9",
+    "name": "Baked Steak Fries",
+    "ingredients": "Basic ingredients for Baked Steak Fries",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:40:00.013248523-05:00",
+    "updated_at": "2026-02-25T00:40:00.013248523-05:00"
+  },
+  {
+    "id": "3fc2f535-d022-487a-a10b-657329bf9d82",
+    "name": "Chicken Wing Bar",
+    "ingredients": "Basic ingredients for Chicken Wing Bar",
+    "restrictions": [],
+    "created_at": "2026-02-25T00:39:56.332371974-05:00",
+    "updated_at": "2026-02-25T00:39:56.332371974-05:00"
+  },
+  {
+    "id": "9f3147f9-f926-4c22-8aa6-61c42188690d",
+    "name": "Roasted Pork Verde",
+    "ingredients": "Basic ingredients for Roasted Pork Verde",
+    "restrictions": [
+      "Pork",
+      "Spicy"
+    ],
+    "created_at": "2026-02-25T00:39:57.069451165-05:00",
+    "updated_at": "2026-02-25T00:39:57.069451165-05:00"
+  },
+  {
+    "id": "a58aacb5-f5a0-4b69-a506-eda8660c6f50",
+    "name": "Chicken-Less Tenders",
+    "ingredients": "Basic ingredients for Chicken-Less Tenders",
+    "restrictions": [
+      "Vegan",
+      "Soy",
+      "Gluten"
+    ],
+    "created_at": "2026-02-25T00:39:58.476514195-05:00",
+    "updated_at": "2026-02-25T00:39:58.476514195-05:00"
+  },
+  {
+    "id": "b48921d8-b325-4da4-af22-73c90a18fccd",
+    "name": "frfr",
+    "ingredients": "erferf",
+    "restrictions": [
+      "Eggs"
+    ],
+    "created_at": "2026-02-17T00:11:05.039557911-05:00",
+    "updated_at": "2026-02-17T00:11:05.039557911-05:00"
+  },
+  {
+    "id": "463763f2-b6d6-4940-a9c6-103f9f384440",
+    "name": "Skidmore Mac N Cheese",
+    "ingredients": "Basic ingredients for Skidmore Mac N Cheese",
+    "restrictions": [
+      "Vegetarian",
+      "Gluten",
+      "Dairy"
+    ],
+    "created_at": "2026-02-25T00:40:01.546428071-05:00",
+    "updated_at": "2026-02-25T00:40:01.546428071-05:00"
+  },
+  {
+    "id": "98d5f4aa-c57c-4ef6-83ac-eb42f8852569",
+    "name": "Rosemary Garlic Pork Loin",
+    "ingredients": "Basic ingredients for Rosemary Garlic Pork Loin",
+    "restrictions": [
+      "Pork"
+    ],
+    "created_at": "2026-02-25T00:39:57.705143787-05:00",
+    "updated_at": "2026-02-25T00:39:57.705143787-05:00"
+  },
+  {
+    "id": "f8285b28-92ef-4067-ae7a-24ed9db61fc0",
+    "name": "Chicken Sausage",
+    "ingredients": "Basic ingredients for Chicken Sausage",
+    "restrictions": [],
+    "created_at": "2026-02-25T00:39:55.905182232-05:00",
+    "updated_at": "2026-02-25T00:39:55.905182232-05:00"
+  },
+  {
+    "id": "09f09ca0-6d53-400c-9fa0-07461a4bec15",
+    "name": "BBQ Spiced Kettle Chips",
+    "ingredients": "Basic ingredients for BBQ Spiced Kettle Chips",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:40:00.132586919-05:00",
+    "updated_at": "2026-02-25T00:40:00.132586919-05:00"
+  },
+  {
+    "id": "92893cf7-d336-4dad-9fc4-3889e762c7ef",
+    "name": "Vegan \u0026 GF Pancakes",
+    "ingredients": "Basic ingredients for Vegan \u0026 GF Pancakes",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:39:55.589590391-05:00",
+    "updated_at": "2026-02-25T00:39:55.589590391-05:00"
+  },
+  {
+    "id": "731a9c26-bdb9-4ca8-89a2-055a5e34ad2c",
+    "name": "Tijuana Meatballs With Arroz Verde and Sweet Pepper Relish",
+    "ingredients": "Basic ingredients for Tijuana Meatballs With Arroz Verde and Sweet Pepper Relish",
+    "restrictions": [
+      "Spicy"
+    ],
+    "created_at": "2026-02-25T00:39:56.119278636-05:00",
+    "updated_at": "2026-02-25T00:39:56.119278636-05:00"
+  },
+  {
+    "id": "57de5bc6-9249-4260-80ce-57bdb4989a75",
+    "name": "Beyond Steak House Burger",
+    "ingredients": "Basic ingredients for Beyond Steak House Burger",
+    "restrictions": [
+      "Vegan",
+      "Soy",
+      "Gluten"
+    ],
+    "created_at": "2026-02-25T00:39:57.596215694-05:00",
+    "updated_at": "2026-02-25T00:39:57.596215694-05:00"
+  },
+  {
+    "id": "725f1a77-a086-4e26-9472-27c61269ff36",
+    "name": "Veggie Sausage",
+    "ingredients": "Basic ingredients for Veggie Sausage",
+    "restrictions": [
+      "Vegetarian",
+      "Soy"
+    ],
+    "created_at": "2026-02-25T00:39:55.693496709-05:00",
+    "updated_at": "2026-02-25T00:39:55.693496709-05:00"
+  },
+  {
+    "id": "34af462b-8c2e-428d-bf5a-4debe6523f05",
+    "name": "Chicken Tender Friday",
+    "ingredients": "Basic ingredients for Chicken Tender Friday",
+    "restrictions": [
+      "Gluten"
+    ],
+    "created_at": "2026-02-25T00:39:58.68651286-05:00",
+    "updated_at": "2026-02-25T00:39:58.68651286-05:00"
+  },
+  {
+    "id": "8d17cfb6-9aa2-4306-9279-b8cac2223c50",
+    "name": "Vegan Mac N Chz",
+    "ingredients": "Basic ingredients for Vegan Mac N Chz",
+    "restrictions": [
+      "Vegan",
+      "Gluten",
+      "Soy"
+    ],
+    "created_at": "2026-02-25T00:40:01.652729835-05:00",
+    "updated_at": "2026-02-25T00:40:01.652729835-05:00"
+  },
+  {
+    "id": "c684c11d-270a-430a-9bf6-8bb552dad55a",
+    "name": "Char Sui Chicken",
+    "ingredients": "Basic ingredients for Char Sui Chicken",
+    "restrictions": [
+      "Soy"
+    ],
+    "created_at": "2026-02-25T00:39:57.490829387-05:00",
+    "updated_at": "2026-02-25T00:39:57.490829387-05:00"
+  },
+  {
+    "id": "197c3cf9-f54f-493b-bd51-64ec61b27941",
+    "name": "Pollo Adobo",
+    "ingredients": "Basic ingredients for Pollo Adobo",
+    "restrictions": [
+      "Spicy"
+    ],
+    "created_at": "2026-02-25T00:39:57.174241482-05:00",
+    "updated_at": "2026-02-25T00:39:57.174241482-05:00"
+  },
+  {
+    "id": "6168991c-43e6-4f81-ab81-34f8193e5b08",
+    "name": "Bang Bang Chicken Sandwich",
+    "ingredients": "Basic ingredients for Bang Bang Chicken Sandwich",
+    "restrictions": [
+      "Gluten",
+      "Spicy"
+    ],
+    "created_at": "2026-02-25T00:39:56.01410282-05:00",
+    "updated_at": "2026-02-25T00:39:56.01410282-05:00"
+  },
+  {
+    "id": "6456a128-745f-4585-8ccf-832098aab412",
+    "name": "Griddled All Beef Hot Dogs with Chopped Onions and Relish",
+    "ingredients": "Basic ingredients for Griddled All Beef Hot Dogs with Chopped Onions and Relish",
+    "restrictions": [
+      "Gluten"
+    ],
+    "created_at": "2026-02-25T00:39:56.225024855-05:00",
+    "updated_at": "2026-02-25T00:39:56.225024855-05:00"
+  },
+  {
+    "id": "159dddc1-a8ab-4737-83b0-599076cce299",
+    "name": "Vindaloo Tofu with Mango Lime Rice",
+    "ingredients": "Basic ingredients for Vindaloo Tofu with Mango Lime Rice",
+    "restrictions": [
+      "Vegan",
+      "Soy",
+      "Spicy"
+    ],
+    "created_at": "2026-02-25T00:39:56.96257213-05:00",
+    "updated_at": "2026-02-25T00:39:56.96257213-05:00"
+  },
+  {
+    "id": "dbbe894d-2b0d-46f9-998d-68e0e8f5a4bb",
+    "name": "Yellow Rice \u0026 Beans",
+    "ingredients": "Basic ingredients for Yellow Rice \u0026 Beans",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:39:59.154447739-05:00",
+    "updated_at": "2026-02-25T00:39:59.154447739-05:00"
+  },
+  {
+    "id": "ec5c0cd1-42af-4034-a94b-e2c82270c131",
+    "name": "Soup Du Jour",
+    "ingredients": "Basic ingredients for Soup Du Jour",
+    "restrictions": [],
+    "created_at": "2026-02-25T00:40:01.109528497-05:00",
+    "updated_at": "2026-02-25T00:40:01.109528497-05:00"
+  },
+  {
+    "id": "5339830e-0f72-4e25-ab28-abe26cf1244a",
+    "name": "Herb Marinated Grilled Chicken Breast with Chardonnay Jus",
+    "ingredients": "Basic ingredients for Herb Marinated Grilled Chicken Breast with Chardonnay Jus",
+    "restrictions": [],
+    "created_at": "2026-02-25T00:39:56.649293665-05:00",
+    "updated_at": "2026-02-25T00:39:56.649293665-05:00"
+  },
+  {
+    "id": "3e382a94-d1a5-44c7-8cad-43532851b949",
+    "name": "Shrimp and Kimchee",
+    "ingredients": "Basic ingredients for Shrimp and Kimchee",
+    "restrictions": [
+      "Shellfish",
+      "Spicy"
+    ],
+    "created_at": "2026-02-25T00:39:56.861848942-05:00",
+    "updated_at": "2026-02-25T00:39:56.861848942-05:00"
+  },
+  {
+    "id": "e397999a-b594-4e66-bf3c-e062543304b1",
+    "name": "Roasted Chicken with Mole Poblano",
+    "ingredients": "Basic ingredients for Roasted Chicken with Mole Poblano",
+    "restrictions": [
+      "Spicy"
+    ],
+    "created_at": "2026-02-25T00:39:57.387477277-05:00",
+    "updated_at": "2026-02-25T00:39:57.387477277-05:00"
+  },
+  {
+    "id": "42fbadc7-7acd-4ff4-b801-baff9f9a4e6a",
+    "name": "Basil Pesto \u0026 Tomato Grilled Cheese",
+    "ingredients": "Basic ingredients for Basil Pesto \u0026 Tomato Grilled Cheese",
+    "restrictions": [
+      "Gluten",
+      "Dairy",
+      "Vegetarian"
+    ],
+    "created_at": "2026-02-25T00:39:56.754256181-05:00",
+    "updated_at": "2026-02-25T00:39:56.754256181-05:00"
+  },
+  {
+    "id": "cfacfe50-6679-4311-b3ed-ccdda3571ca5",
+    "name": "Jasmine Rice",
+    "ingredients": "Basic ingredients for Jasmine Rice",
+    "restrictions": [
+      "Vegan"
+    ],
+    "created_at": "2026-02-25T00:40:00.570318489-05:00",
+    "updated_at": "2026-02-25T00:40:00.570318489-05:00"
+  },
+  {
+    "id": "d4394337-2565-45f4-b044-fdcb78bdc1ac",
+    "name": "Arctic Salmon Burgers with Lemon Aioli",
+    "ingredients": "Basic ingredients for Arctic Salmon Burgers with Lemon Aioli",
+    "restrictions": [
+      "Fish",
+      "Eggs",
+      "Gluten"
+    ],
+    "created_at": "2026-02-25T00:39:57.825232356-05:00",
+    "updated_at": "2026-02-25T00:39:57.825232356-05:00"
+  },
+  {
+    "id": "985c5213-0efe-4035-9bbe-daf34d44b7aa",
+    "name": "Chicken Fried Rice",
+    "ingredients": "Basic ingredients for Chicken Fried Rice",
+    "restrictions": [
+      "Soy",
+      "Eggs"
+    ],
+    "created_at": "2026-02-25T00:39:58.926386675-05:00",
+    "updated_at": "2026-02-25T00:39:58.926386675-05:00"
+  }
+]

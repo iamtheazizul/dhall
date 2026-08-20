@@ -1,0 +1,18 @@
+[
+  {
+    "id": "86dae642-8511-40d0-8604-90b521edc029",
+    "url": "/uploads/2ef83df4-eeba-423d-8178-7d2d391542e3.jpg",
+    "filename": "Media-1_1.jpg",
+    "caption": "1",
+    "order": 1,
+    "link": "https://www.facebook.com"
+  },
+  {
+    "id": "d7940d53-ad7c-4b53-be35-f966ab572893",
+    "url": "/uploads/8a2ceb48-af24-4c72-931a-49f6d87fc04a.jpg",
+    "filename": "Untitled design.jpg",
+    "caption": "2",
+    "order": 2,
+    "link": "https://www.skidmore.edu"
+  }
+]

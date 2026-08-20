@@ -1,0 +1,79 @@
+{
+  "days": [
+    {
+      "day": "Monday",
+      "breakfast": "",
+      "lunch": "11:00 AM - 2:00 PM",
+      "dinner": "5:00 PM - 8:00 PM",
+      "late_night": "8:00 PM - 10:00 PM"
+    },
+    {
+      "day": "Tuesday",
+      "breakfast": "7:00 AM - 10:30 AM",
+      "lunch": "11:00 AM - 2:00 PM",
+      "dinner": "5:00 PM - 8:00 PM",
+      "late_night": "8:00 PM - 10:00 PM"
+    },
+    {
+      "day": "Wednesday",
+      "breakfast": "7:00 AM - 10:30 AM",
+      "lunch": "11:00 AM - 2:00 PM",
+      "dinner": "5:00 PM - 8:00 PM",
+      "late_night": "8:00 PM - 10:00 PM"
+    },
+    {
+      "day": "Thursday",
+      "breakfast": "7:00 AM - 10:30 AM",
+      "lunch": "11:00 AM - 2:00 PM",
+      "dinner": "5:00 PM - 8:00 PM",
+      "late_night": "8:00 PM - 10:00 PM"
+    },
+    {
+      "day": "Friday",
+      "breakfast": "7:00 AM - 10:30 AM",
+      "lunch": "11:00 AM - 2:00 PM",
+      "dinner": "5:00 PM - 8:00 PM",
+      "late_night": ""
+    },
+    {
+      "day": "Saturday",
+      "breakfast": "8:00 AM - 11:00 AM",
+      "lunch": "12:00 PM - 3:00 PM",
+      "dinner": "5:00 PM - 8:00 PM",
+      "late_night": ""
+    },
+    {
+      "day": "Sunday",
+      "breakfast": "9:00 AM - 11:00 AM",
+      "lunch": "12:00 PM - 3:00 PM",
+      "dinner": "5:00 PM - 8:00 PM",
+      "late_night": "8:00 PM - 10:00 PM"
+    }
+  ],
+  "stations": [
+    {
+      "name": "Diner",
+      "hours": "7:00 AM - 8:00 PM"
+    },
+    {
+      "name": "Emily's Garden",
+      "hours": "7:00 AM - 8:00 PM"
+    },
+    {
+      "name": "Global/Noodle Bar",
+      "hours": "11:00 AM - 8:00 PM"
+    },
+    {
+      "name": "Minus 9",
+      "hours": "5:00 PM - 8:00 PM"
+    },
+    {
+      "name": "The Corner Deli",
+      "hours": "7:00 AM - 8:00 PM"
+    },
+    {
+      "name": "Supremo's",
+      "hours": "12:00 AM - 8:00 PM"
+    }
+  ]
+}

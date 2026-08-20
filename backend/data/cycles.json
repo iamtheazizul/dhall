@@ -1,0 +1,234 @@
+[
+  {
+    "id": "3cae8ba9-9d4d-45c2-9b38-51da440a12f0",
+    "name": "Spring 2026 Cycle 1",
+    "description": "",
+    "is_active": false,
+    "order": 1,
+    "days": [
+      {
+        "day_number": 1,
+        "meals": {}
+      },
+      {
+        "day_number": 2,
+        "meals": {}
+      },
+      {
+        "day_number": 3,
+        "meals": {}
+      },
+      {
+        "day_number": 4,
+        "meals": {
+          "Lunch": {
+            "Diner": [
+              "0720f8e3-0fce-4738-a25c-638cbd812cc0",
+              "b48921d8-b325-4da4-af22-73c90a18fccd"
+            ]
+          }
+        }
+      },
+      {
+        "day_number": 5,
+        "meals": {}
+      },
+      {
+        "day_number": 6,
+        "meals": {}
+      },
+      {
+        "day_number": 7,
+        "meals": {}
+      }
+    ],
+    "activated_at": "2026-03-06T18:39:29.597Z",
+    "created_at": "2026-02-19T02:09:06.118314854-05:00",
+    "updated_at": "2026-03-06T15:54:59.446035202-05:00"
+  },
+  {
+    "id": "60eaadae-6b29-4297-9dd7-b5e4a49a895e",
+    "name": "Spring 2026 Cycle 2",
+    "description": "",
+    "is_active": false,
+    "order": 2,
+    "days": [
+      {
+        "day_number": 1,
+        "meals": {
+          "Late Night": {
+            "Diner": [
+              "555fd313-245a-466d-b058-b347aa5fcb7a"
+            ],
+            "Emily's Garden": [
+              "35bf4855-624a-4a98-84e0-a1d7a1ac73e1"
+            ],
+            "Global/Noodle Bar": [
+              "b48921d8-b325-4da4-af22-73c90a18fccd"
+            ],
+            "Minus 9": [
+              "0720f8e3-0fce-4738-a25c-638cbd812cc0"
+            ],
+            "Supremo's": [
+              "4c2d2eb4-fc45-4134-bb7b-e3c297c3136a"
+            ],
+            "The Corner Deli": [
+              "166d3de9-0a7f-4909-b63d-5cfd05536f30"
+            ]
+          }
+        }
+      },
+      {
+        "day_number": 2,
+        "meals": {
+          "Breakfast": {
+            "Diner": [
+              "b48921d8-b325-4da4-af22-73c90a18fccd"
+            ],
+            "Emily's Garden": [
+              "35bf4855-624a-4a98-84e0-a1d7a1ac73e1"
+            ],
+            "Global/Noodle Bar": [
+              "0720f8e3-0fce-4738-a25c-638cbd812cc0"
+            ],
+            "Minus 9": [
+              "166d3de9-0a7f-4909-b63d-5cfd05536f30"
+            ],
+            "Supremo's": [
+              "4c2d2eb4-fc45-4134-bb7b-e3c297c3136a"
+            ],
+            "The Corner Deli": [
+              "555fd313-245a-466d-b058-b347aa5fcb7a"
+            ]
+          }
+        }
+      },
+      {
+        "day_number": 3,
+        "meals": {
+          "Breakfast": {
+            "Diner": [
+              "166d3de9-0a7f-4909-b63d-5cfd05536f30"
+            ],
+            "Emily's Garden": [
+              "555fd313-245a-466d-b058-b347aa5fcb7a"
+            ],
+            "Global/Noodle Bar": [
+              "35bf4855-624a-4a98-84e0-a1d7a1ac73e1"
+            ],
+            "Minus 9": [
+              "b48921d8-b325-4da4-af22-73c90a18fccd"
+            ],
+            "Supremo's": [
+              "94fdec53-1be7-4e23-8e40-4b56c6e90f5c"
+            ],
+            "The Corner Deli": [
+              "0720f8e3-0fce-4738-a25c-638cbd812cc0"
+            ]
+          }
+        }
+      },
+      {
+        "day_number": 4,
+        "meals": {
+          "Lunch": {
+            "Emily's": [
+              "4c2d2eb4-fc45-4134-bb7b-e3c297c3136a",
+              "555fd313-245a-466d-b058-b347aa5fcb7a"
+            ]
+          }
+        }
+      },
+      {
+        "day_number": 5,
+        "meals": {
+          "Breakfast": {
+            "Diner": []
+          },
+          "Lunch": {
+            "Emily's Garden": [
+              "92893cf7-d336-4dad-9fc4-3889e762c7ef",
+              "408342e0-2096-476e-83e8-69c2274034f5",
+              "7b9b990f-0c0e-43fc-9330-e93edb48adeb"
+            ],
+            "Supremo's": [
+              "cfacfe50-6679-4311-b3ed-ccdda3571ca5",
+              "abb30a9c-bf8b-4c6b-ae47-b2da80e6bf18",
+              "f199531d-c89d-431b-928e-d649dc59ed8c"
+            ]
+          }
+        }
+      },
+      {
+        "day_number": 6,
+        "meals": {}
+      },
+      {
+        "day_number": 7,
+        "meals": {
+          "Breakfast": {
+            "Diner": [
+              "dbbe894d-2b0d-46f9-998d-68e0e8f5a4bb"
+            ]
+          },
+          "Dinner": {
+            "Diner": [
+              "dbbe894d-2b0d-46f9-998d-68e0e8f5a4bb"
+            ],
+            "Supremo's": [
+              "dbbe894d-2b0d-46f9-998d-68e0e8f5a4bb"
+            ]
+          },
+          "Lunch": {
+            "Diner": [
+              "dbbe894d-2b0d-46f9-998d-68e0e8f5a4bb"
+            ]
+          }
+        }
+      }
+    ],
+    "activated_at": "2026-03-06T20:54:58.946Z",
+    "created_at": "2026-02-19T02:09:11.377778674-05:00",
+    "updated_at": "2026-05-02T21:54:53.548978395Z"
+  },
+  {
+    "id": "d8a897b3-ff90-4737-b53d-df4ec321854f",
+    "name": "Spring 2026 Cycle 4",
+    "description": "",
+    "is_active": true,
+    "order": 3,
+    "days": [
+      {
+        "day_number": 1,
+        "meals": {}
+      },
+      {
+        "day_number": 2,
+        "meals": {}
+      },
+      {
+        "day_number": 3,
+        "meals": {}
+      },
+      {
+        "day_number": 4,
+        "meals": {}
+      },
+      {
+        "day_number": 5,
+        "meals": {}
+      },
+      {
+        "day_number": 6,
+        "meals": {}
+      },
+      {
+        "day_number": 7,
+        "meals": {}
+      }
+    ],
+    "activated_at": "2026-05-02T21:54:53Z",
+    "created_at": "2026-03-17T06:22:52.514506221Z",
+    "updated_at": "2026-05-02T21:54:53.715231898Z"
+  }
+]
