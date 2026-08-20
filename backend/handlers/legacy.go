@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/jek821/dhall/data"
+	"github.com/iamtheazizul/dhall-backend/data"
 )
 
 // GetDailyHandler handles GET /daily (legacy endpoint)

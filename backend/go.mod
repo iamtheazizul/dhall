@@ -1,4 +1,4 @@
-module github.com/jek821/dhall
+module github.com/iamtheazizul/dhall-backend
 
 go 1.24.5
 

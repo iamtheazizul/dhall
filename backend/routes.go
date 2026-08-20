@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/jek821/dhall/handlers"
+	"github.com/iamtheazizul/dhall-backend/handlers"
 )
 
 func registerRoutes(mux *http.ServeMux) {
