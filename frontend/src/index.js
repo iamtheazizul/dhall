@@ -16,6 +16,7 @@ import FoodCycle from './pages/Cycle/FoodCycle';
 import HoursPage from './pages/Hours/HoursPage';
 import ManageHours from './pages/Hours/ManageHours';
 import ManageSlideshow from './components/App/Slideshow/ManageSlideshow';
+import WeeklyMenu from './pages/WeeklyMenu'
 import './styles/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,7 +28,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/login" element={<Login />} />
         <Route path="/hours" element={<HoursPage />} />
-
+        <Route path="/weekly-menu" element={<WeeklyMenu />} />
         {/* Protected admin routes */}
         <Route path="/admin" element={
           <ProtectedRoute>
